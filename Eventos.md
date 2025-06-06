@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Café con Historia</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    :root {
+      --naranja: #c3703d;
+      --amarillo: #d8a253;
+      --hueso: #f3e7d3;
+      --cafe-oscuro: #5c3a21;
+      --cafe-claro: #a57c65;
+      --verde: #8a8752;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--hueso);
+      color: var(--cafe-oscuro);
+    }
+
+    header {
+      background-color: var(--naranja);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+      nav {
+      background-color: var(--verde);
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: var(--hueso);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .slogan {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about h2,
+    .info h2 {
+      color: var(--cafe-claro);
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+  .sucursal_2 {
+  background-color: var(--amarillo);
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--hueso);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+}
+
+ }
+
+
+
+    .image-placeholder {
+      background-color: var(--amarillo);
+      width: 100%;
+      height: 200px;
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Café con Historia</h1>
+    <p class="slogan">Un espacio para saborear y recordar</p>
+  </header>
+ 
+<nav>
+    <a href="index_home_musicales.html">Menú Principal</a>
+    <a href="index_catalogo_musicales.html">Historia</a>
+    <a href="index_cafeexamen.html">Galería</a>
+    <a href="index_sucursal_musicales.html">Eventos</a>
+  </nav>
+
+  <section class="about">
+    <h2>Eventos</h2>
+    <p>En Café con Historia, el arte y la palabra se sirven junto al café. Nuestro espacio se transforma cada semana para abrirle la puerta a la creatividad, la reflexión y el encuentro. Ya sea que vengas a escuchar, a compartir o simplemente a dejarte inspirar, siempre hay algo esperándote.
+</p>
+  </section>
+
+ <section class="sucursal_2">
+  <div>
+    <h2>Noches de Poesía</h2>
+    <p>Una vez al mes, la poesía se adueña del café. Voces nuevas y consagradas comparten versos en un ambiente íntimo y cálido. Puedes venir a leer, escuchar o simplemente dejarte llevar por las palabras.</p>
+    <a href="pagina_sucursal.html" class="boton-sucursal" target="_blank">Más información...</a>
+  </div>
+</section>
+
+ <section class="sucursal_2">
+  <div>
+    <h2>Exposiciones de Arte</h2>
+    <p>Nuestras paredes cuentan historias. Damos espacio a artistas locales para exponer su obra y conectar con la comunidad. Cada muestra permanece por varias semanas, creando un diálogo entre el arte y quienes nos visitan.</p>
+    <a href="pagina_sucursal.html" class="boton-sucursal" target="_blank">Más información...</a>
+  </div>
+</section>
+
+ <section class="sucursal_2">
+  <div>
+    <h2>NMúsica Acústica en Vivo</h2>
+    <p>Al caer la tarde, la música llega suave, como el aroma del café. Presentamos sesiones acústicas con músicos oaxaqueños y de otros rincones del país. Ideal para relajarte, descubrir nuevos talentos y disfrutar de una buena bebida.</p>
+    <a href="pagina_sucursal.html" class="boton-sucursal" target="_blank">Más información...</a>
+  </div>
+</section>
+
+
+
+  <section class="info">
+    <h2>Visítanos</h2>
+    <p>Lunes a sábado: 8:00 AM – 8:00 PM<br>
+    Calle de los Sabores #28, Centro, Oaxaca</p>
+  </section>
+
+  <footer>
+    <p>Contacto: cafeconhistoria@gmail.com</p>
+    <p>© 2025 Café con Historia</p>
+  </footer>
+</body>
+</html>
