@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Café con Historia</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    :root {
+      --naranja: #c3703d;
+      --amarillo: #d8a253;
+      --hueso: #f3e7d3;
+      --cafe-oscuro: #5c3a21;
+      --cafe-claro: #a57c65;
+      --verde: #8a8752;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--hueso);
+      color: var(--cafe-oscuro);
+    }
+
+    header {
+      background-color: var(--naranja);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    nav {
+      background-color: var(--verde);
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--hueso);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .slogan {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: transparent;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about h2,
+    .info h2 {
+      color: var(--cafe-claro);
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .image-placeholder {
+      background-color: var(--amarillo);
+      width: 100%;
+      height: 200px;
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Fondo cinemático solo para el contenido principal */
+    .background-gallery {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .background-gallery::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      animation: slideshow 60s infinite;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+
+    @keyframes slideshow {
+      0%   { background-image: url('https://i.pinimg.com/736x/41/1a/65/411a65da2bcb2944a0d364846757fa75.jpg'); }
+      10%  { background-image: url('https://i.pinimg.com/736x/03/7c/85/037c85a983f167b30f4f5f2cdcefe0f2.jpg'); }
+      20%  { background-image: url('https://i.pinimg.com/736x/38/91/5b/38915ba999c02a439988fbf9bc46a1d8.jpg'); }
+      30%  { background-image: url('https://i.pinimg.com/736x/fa/c7/87/fac7878662927724f5bdbd157d06b512.jpg'); }
+      40% { background-image: url('https://i.pinimg.com/736x/76/33/bf/7633bfb080c31e1c7fbf41124009a32f.jpg'); }
+      50% { background-image: url('https://i.pinimg.com/736x/61/dc/d5/61dcd56611abbb0febafbe61c9c1fc73.jpg'); }
+      60% { background-image: url('https://i.pinimg.com/736x/22/c5/d6/22c5d661c4c2648055bbbba590f9036f.jpg'); }
+      70% { background-image: url('https://i.https://i.pinimg.com/736x/42/a7/69/42a7698aad22c7c3d609ddfba756b941.jpg'); }
+      80% { background-image: url('https://i.pinimg.com/736x/a8/df/2b/a8df2bafbe1b85fb3c4b51f34dd46cc2.jpg'); }
+      90% { background-image: url('https://i.pinimg.com/736x/61/69/8c/61698ce7b4e34b12298d46698f8571b9.jpg'); }
+      100% { background-image: url('https://i.pinimg.com/736x/64/72/15/647215c44053351565dd968557638c1a.jpg'); }
+
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Café con Historia</h1>
+    <p class="slogan">Un espacio para saborear y recordar</p>
+  </header>
+
+  <nav>
+    <a href="index_home_musicales.html">Menú Principal</a>
+    <a href="index_catalogo_musicales.html">Historia</a>
+    <a href="index_cafeexamen.html">Galería</a>
+    <a href="index_sucursal_musicales.html">Eventos</a>
+  </nav>
+
+  <!-- Fondo animado solo para esta parte -->
+  <div class="background-gallery">
+    <section class="about">
+      <h2>Un espacio para saborear y recordar</h2>
+      <p>
+        Café con Historia es una cafetería ubicada en el centro histórico de Oaxaca de Juárez, que combina el sabor del café orgánico local con el arte, la cultura y la tradición oaxaqueña. Nació del deseo de crear un espacio que rinda homenaje a las raíces y al trabajo de los caficultores, así como a la expresión artística. Más que una cafetería, es un punto de encuentro para almas creativas, donde cada taza cuenta una historia. Su misión es ofrecer una experiencia auténtica que apoye a productores locales y celebre lo nuestro. Su visión es consolidarse como un referente cultural y comunitario en Oaxaca, donde el café y la cultura se entrelacen para preservar la identidad local.
+      </p>
+    </section>
+
+    <section class="info">
+      <h2>Visítanos</h2>
+      <p>
+        Lunes a sábado: 8:00 AM – 8:00 PM<br>
+        Calle de los Sabores #28, Centro, Oaxaca
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Contacto: cafeconhistoria@gmail.com</p>
+    <p>© 2025 Café con Historia</p>
+  </footer>
+</body>
+</html>
