@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Café con Historia</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    :root {
+      --naranja: #c3703d;
+      --amarillo: #d8a253;
+      --hueso: #f3e7d3;
+      --cafe-oscuro: #5c3a21;
+      --cafe-claro: #a57c65;
+      --verde: #8a8752;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--hueso);
+      color: var(--cafe-oscuro);
+    }
+
+    header {
+      background-color: var(--naranja);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    nav {
+      background-color: var(--verde);
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--hueso);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .slogan {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background-color: transparent;
+      position: relative;
+      z-index: 1;
+    }
+
+    .about h2,
+    .info h2 {
+      color: var(--cafe-claro);
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    .image-placeholder {
+      background-color: var(--amarillo);
+      width: 100%;
+      height: 200px;
+      margin: 1rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 10px;
+    }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Café con Historia</h1>
+    <p class="slogan">Un espacio para saborear y recordar</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Menú Principal</a>
+    <a href="index_catalogo_musicales.html">Historia</a>
+    <a href="index_galeriacafe.html">Galería</a>
+    <a href="index_Eventos.html">Eventos</a>
+  </nav>
+
+  <!-- Fondo animado solo para esta parte -->
+  <div class="background-gallery">
+    <section class="about">
+      <h2>Nuestra Historia</h2>
+      <p>
+        Café con Historia nació con el corazón puesto en Oaxaca y el alma cargada de café. Ubicados en el corazón del centro histórico de Oaxaca de Juárez, somos más que una cafetería: somos un rincón donde el aroma del café orgánico se mezcla con las palabras, el arte y la tradición.
+Nuestra pasión comenzó con una taza de café compartida entre amigos, una conversación sobre nuestras raíces y el deseo de crear un espacio que rindiera homenaje a la riqueza cultural de nuestra tierra. Desde entonces, cada taza que servimos cuenta una historia: la de los caficultores oaxaqueños que cultivan con respeto la tierra, la de los ingredientes locales que inspiran nuestra repostería artesanal, y la de las voces que llenan nuestras paredes durante lecturas de poesía, presentaciones de libros y exposiciones artísticas.
+Café con Historia es un refugio para el alma creativa, un lugar donde cada visita es una experiencia, y cada detalle está pensado para celebrar lo auténtico, lo nuestro.
+Ven a escribir tu propia historia con nosotros.
+      </p>
+       <h2>Nuestra Misión</h2>
+      <p>
+        En Café con Historia, nuestra misión es ofrecer una experiencia auténtica que combine el sabor del café orgánico oaxaqueño con la riqueza de la cultura local. Creamos un espacio acogedor donde cada taza, cada bocado y cada evento celebra nuestras raíces, apoya a productores locales y da voz al arte y la creatividad.
+      </p>
+       <h2>Nuestra Visión</h2>
+      <p>
+        Soñamos con ser un punto de encuentro cultural en el corazón de Oaxaca: un lugar donde el café sea excusa para conectarnos, las palabras fluyan libres y las expresiones artísticas encuentren un hogar. Queremos seguir creciendo de la mano de nuestra comunidad, fortaleciendo redes sostenibles y preservando la identidad oaxaqueña a través de cada historia compartida.
+      </p>
+    </section>
+  </div>
+
+  <footer>
+    <p>Contacto: cafeconhistoria@gmail.com</p>
+    <p>© 2025 Café con Historia</p>
+  </footer>
+</body>
+</html>
