@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Café con Historia Galería</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <style>
+    :root {
+      --naranja: #c3703d;
+      --amarillo: #d8a253;
+      --hueso: #f3e7d3;
+      --cafe-oscuro: #5c3a21;
+      --cafe-claro: #a57c65;
+      --verde: #8a8752;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background-color: var(--hueso);
+      color: var(--cafe-oscuro);
+    }
+
+    header {
+      background-color: var(--naranja);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+      nav {
+      background-color: var(--verde);
+      padding: 0.5rem 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      color: var(--hueso);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    .slogan {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .about h2,
+    .info h2 {
+      color: var(--cafe-claro);
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+	main {
+      padding: 2rem;
+    }
+    .image-placeholder {
+      background-color: var(--amarillo);
+      margin: 1rem auto;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 800px;
+      align-items: center;
+      justify-content: center;
+      color: white;
+          }
+
+    footer {
+      background-color: var(--verde);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Galería</h1>
+    <p class="slogan">Un espacio para saborear y recordar</p>
+  </header>
+ 
+<nav>
+    <a href="Menú principal.html">Menú Principal</a>
+    <a href="index_catalogo_musicales.html">Historia</a>
+    <a href="index_galeriacafe.html">Galería</a>
+    <a href="Eventos.html">Eventos</a>
+
+
+  </nav>
+
+  <section class="about">
+    <h2>Conoce más sobre nuestro espacio</h2>
+    <p>Ubicados en el corazón de Oaxaca, servimos café orgánico, repostería artesanal y ofrecemos un rincón para la cultura y la memoria colectiva.</p>
+  </section>
+
+  <main>
+  <section class="gallery">
+    <img src="https://i.pinimg.com/736x/25/bb/fa/25bbfaa4a29eeafbb208ace1ebbcf88b.jpg" alt="Espacio 1">
+    <img src="https://i.pinimg.com/736x/48/d2/33/48d233507372b3ef8e36a0c2b1448cfe.jpg" alt="Espacio 2">
+    <img src="https://i.pinimg.com/736x/53/0c/8b/530c8b6a938b80ab37f676cba550d80e.jpg" alt="Espacio 3">
+    <img src="https://i.pinimg.com/736x/b1/c0/26/b1c0269ddc76801d7a79f7809c041e24.jpg" alt="Espacio 4">
+    <img src="https://i.pinimg.com/736x/42/7b/2f/427b2ffdcd45ae8d15d722350e05c091.jpg" alt="Espacio 5">
+    <img src="https://i.pinimg.com/736x/e9/37/dd/e937ddbb7a65b4ab96cd46f12932be3f.jpg" alt="Espacio 6">
+  </section>
+</main>
+
+
+  <section class="info">
+    <h2>Visítanos</h2>
+    <p>Lunes a sábado: 8:00 AM – 8:00 PM<br>
+    Calle de los Sabores #28, Centro, Oaxaca</p>
+<div class="image-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15256.653294135627!2d-96.73834719218745!3d17.064661999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c722393ac3ffff%3A0xf2a4a766aa2d514a!2sCASA%20DE%20LOS%20SABORES!5e0!3m2!1ses!2smx!4v1749242101871!5m2!1ses!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+  </section>
+
+  <footer>
+    <p>Contacto: cafeconhistoria@gmail.com</p>
+    <p>© 2025 Café con Historia</p>
+  </footer>
+</body>
+</html>
